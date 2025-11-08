@@ -43,6 +43,7 @@ public class EnhancedPlayerController : BaseMovementController
     
     // Animation State
     private Animator playerAnimator;
+    private Transform playerVisualTransform; // The child object to rotate
     private bool isRunning = false;
     private bool isDead = false;
     private bool isAttacking = false;
@@ -152,6 +153,10 @@ public class EnhancedPlayerController : BaseMovementController
         else
         {
             Debug.Log("EnhancedPlayerController: Found Animator component in child");
+            
+            // Cache the visual transform (the child object with the animator)
+            playerVisualTransform = playerAnimator.transform;
+            Debug.Log($"EnhancedPlayerController: Cached visual transform: {playerVisualTransform.name}");
             
             // Find the attack layer index
             for (int i = 0; i < playerAnimator.layerCount; i++)
@@ -300,14 +305,14 @@ public class EnhancedPlayerController : BaseMovementController
             }
         }
         
-        // Update player rotation to face movement direction
-        if (shouldBeRunning && currentVelocity.magnitude > 0.1f)
+        // Update player visual rotation to face movement direction (only rotate the visual child)
+        if (shouldBeRunning && currentVelocity.magnitude > 0.1f && playerVisualTransform != null)
         {
             Vector3 lookDirection = currentVelocity.normalized;
             if (lookDirection != Vector3.zero)
             {
                 Quaternion targetRotation = Quaternion.LookRotation(lookDirection);
-                transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * 10f);
+                playerVisualTransform.rotation = Quaternion.Slerp(playerVisualTransform.rotation, targetRotation, Time.deltaTime * 10f);
             }
         }
         
@@ -615,6 +620,14 @@ public class EnhancedPlayerController : BaseMovementController
         Vector3 inputDir = GetCameraRelativeMovement(currentInputVector.x, currentInputVector.y) * 2f;
         Debug.DrawLine(transform.position + Vector3.up * 0.5f, 
                       transform.position + Vector3.up * 0.5f + inputDir, Color.yellow);
+        
+        // Draw visual rotation direction (where the character model is facing)
+        if (playerVisualTransform != null)
+        {
+            Vector3 visualForward = playerVisualTransform.forward * 1.5f;
+            Debug.DrawLine(transform.position + Vector3.up * 0.2f, 
+                          transform.position + Vector3.up * 0.2f + visualForward, Color.green);
+        }
         
         // Draw camera forward and right directions (for debugging camera-relative movement)
         if (cameraTransform != null && useCameraRelativeMovement)

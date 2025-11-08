@@ -153,6 +153,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1305235868}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &78831956 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -1880031550125595685, guid: f99c95b1a2dd10247b2f8dd72fdf8d12, type: 3}
+  m_PrefabInstance: {fileID: 1392889535}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &115135199
 GameObject:
   m_ObjectHideFlags: 0
@@ -796,12 +801,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 620269970}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.875}
+  m_LocalRotation: {x: -0.00000008146034, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.532, y: 1.793, z: 0.069}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1011587041}
+  m_Father: {fileID: 78831956}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!64 &632672524
 MeshCollider:
@@ -2590,7 +2595,6 @@ Transform:
   m_Children:
   - {fileID: 1392889536}
   - {fileID: 963194228}
-  - {fileID: 620269971}
   m_Father: {fileID: 564964685}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &1011587042
@@ -2645,7 +2649,7 @@ MonoBehaviour:
   deceleration: 15
   useRotationPointOrbiting: 1
   playerAttributes: {fileID: 11400000, guid: d5fd262aa9262c34298a051ffa786642, type: 2}
-  showAnimationDebug: 0
+  showAnimationDebug: 1
   cameraTransform: {fileID: 0}
   useCameraRelativeMovement: 1
   enableInput: 1
@@ -3598,7 +3602,10 @@ PrefabInstance:
       objectReference: {fileID: 9100000, guid: cea86927f983d13448e46430d7755583, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: -1880031550125595685, guid: f99c95b1a2dd10247b2f8dd72fdf8d12, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 620269971}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f99c95b1a2dd10247b2f8dd72fdf8d12, type: 3}
 --- !u!4 &1392889536 stripped
@@ -4093,7 +4100,7 @@ MonoBehaviour:
   rotationPointEast: {fileID: 4554329102857061360}
   rotationPointSouth: {fileID: 6679514363699813818}
   rotationPointWest: {fileID: 1250105422494493305}
-  showDebugGizmos: 1
+  showDebugGizmos: 0
 --- !u!1 &1821927090
 GameObject:
   m_ObjectHideFlags: 0
@@ -4642,9 +4649,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyPrefabs:
   - {fileID: 8930746630777875036, guid: 3383ebfcd9264504c83ebdbcb003dc24, type: 3}
+  - {fileID: 2876784323706436951, guid: 31cb61144c8abf34e834b5db93c5e801, type: 3}
+  - {fileID: 6419156969746897057, guid: 988d545f09c91804699cdb286149eaf6, type: 3}
+  - {fileID: 3451712265587675708, guid: c429646718deed84db2c14216d611f09, type: 3}
   fallbackEnemyPrefab: {fileID: 8930746630777875036, guid: 3383ebfcd9264504c83ebdbcb003dc24, type: 3}
   useRandomEnemyTypes: 1
-  enemiesPerFace: 3
+  enemiesPerFace: 4
   spawnRadius: 8
   spawnVariation: 0.5
   spawnOnStart: 1
@@ -4684,7 +4694,7 @@ MonoBehaviour:
   - {fileID: 115135200}
   - {fileID: 424107234}
   - {fileID: 788823064}
-  showDebugInfo: 1
+  showDebugInfo: 0
 --- !u!4 &998651378832801487
 Transform:
   m_ObjectHideFlags: 0

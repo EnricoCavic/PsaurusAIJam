@@ -35,6 +35,7 @@ public class EnemyMovementController : BaseMovementController
     
     // Components
     private Animator enemyAnimator;
+    private Transform enemyVisualTransform; // The child object to rotate  
     private HealthController enemyHealth;
     
     #region Unity Lifecycle
@@ -66,6 +67,12 @@ public class EnemyMovementController : BaseMovementController
         if (enemyAnimator == null)
         {
             Debug.LogWarning($"Enemy {gameObject.name}: No Animator component found!");
+        }
+        else
+        {
+            // Cache the visual transform (the child object with the animator)
+            enemyVisualTransform = enemyAnimator.transform;
+            Debug.Log($"Enemy {gameObject.name}: Cached visual transform: {enemyVisualTransform.name}");
         }
         
         // Get health controller component
@@ -122,11 +129,11 @@ public class EnemyMovementController : BaseMovementController
         Vector3 directionToPlayer = (playerTransform.position - transform.position);
         float distanceToPlayer = directionToPlayer.magnitude;
         
-        // Always face the player during combat
-        if (directionToPlayer != Vector3.zero)
+        // Always face the player during combat (only rotate visual child)
+        if (directionToPlayer != Vector3.zero && enemyVisualTransform != null)
         {
             Quaternion targetRotation = Quaternion.LookRotation(directionToPlayer.normalized);
-            transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * 8f);
+            enemyVisualTransform.rotation = Quaternion.Slerp(enemyVisualTransform.rotation, targetRotation, Time.deltaTime * 8f);
         }
         
         // Check if player is within attack range and cooldown is ready
@@ -432,11 +439,11 @@ public class EnemyMovementController : BaseMovementController
         rigidBody.velocity = targetVelocity;
         // Debug.Log($"Enemy {gameObject.name}: Set velocity to: {targetVelocity}");
         
-        // Face the movement direction
-        if (moveDirection != Vector3.zero)
+        // Face the movement direction (only rotate visual child)
+        if (moveDirection != Vector3.zero && enemyVisualTransform != null)
         {
             Quaternion targetRotation = Quaternion.LookRotation(moveDirection);
-            transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * 8f);
+            enemyVisualTransform.rotation = Quaternion.Slerp(enemyVisualTransform.rotation, targetRotation, Time.deltaTime * 8f);
         }
     }
     
