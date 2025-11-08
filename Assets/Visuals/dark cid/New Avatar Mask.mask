@@ -1,0 +1,139 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!319 &31900000
+AvatarMask:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: New Avatar Mask
+  m_Mask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+  m_Elements:
+  - m_Path: 
+    m_Weight: 1
+  - m_Path: Base_Female
+    m_Weight: 0
+  - m_Path: Base_Female/IK
+    m_Weight: 0
+  - m_Path: Base_Female/IK/Base.IK
+    m_Weight: 0
+  - m_Path: Base_Female/IK/Base.IK/Elbow.IK.L
+    m_Weight: 0
+  - m_Path: Base_Female/IK/Base.IK/Elbow.IK.L/Elbow.IK.L_end
+    m_Weight: 0
+  - m_Path: Base_Female/IK/Base.IK/Elbow.IK.R
+    m_Weight: 0
+  - m_Path: Base_Female/IK/Base.IK/Elbow.IK.R/Elbow.IK.R_end
+    m_Weight: 0
+  - m_Path: Base_Female/IK/Base.IK/Hand.IK.L
+    m_Weight: 0
+  - m_Path: Base_Female/IK/Base.IK/Hand.IK.L/Hand.IK.L_end
+    m_Weight: 0
+  - m_Path: Base_Female/IK/Base.IK/Hand.IK.R
+    m_Weight: 0
+  - m_Path: Base_Female/IK/Base.IK/Hand.IK.R/Hand.IK.R_end
+    m_Weight: 0
+  - m_Path: Base_Female/IK/Base.IK/Hips
+    m_Weight: 0
+  - m_Path: Base_Female/IK/Base.IK/Hips/Left_UpperLeg
+    m_Weight: 0
+  - m_Path: Base_Female/IK/Base.IK/Hips/Left_UpperLeg/Left_LowerLeg
+    m_Weight: 0
+  - m_Path: Base_Female/IK/Base.IK/Hips/Left_UpperLeg/Left_LowerLeg/Left_Foot
+    m_Weight: 0
+  - m_Path: Base_Female/IK/Base.IK/Hips/Left_UpperLeg/Left_LowerLeg/Left_Foot/Left_Toes
+    m_Weight: 0
+  - m_Path: Base_Female/IK/Base.IK/Hips/Left_UpperLeg/Left_LowerLeg/Left_Foot/Left_Toes/Left_ToesEnd
+    m_Weight: 0
+  - m_Path: Base_Female/IK/Base.IK/Hips/Left_UpperLeg/Left_LowerLeg/Left_Foot/Left_Toes/Left_ToesEnd/Left_ToesEnd_end
+    m_Weight: 0
+  - m_Path: Base_Female/IK/Base.IK/Hips/Right_UpperLeg
+    m_Weight: 0
+  - m_Path: Base_Female/IK/Base.IK/Hips/Right_UpperLeg/Right_LowerLeg
+    m_Weight: 0
+  - m_Path: Base_Female/IK/Base.IK/Hips/Right_UpperLeg/Right_LowerLeg/Right_Foot
+    m_Weight: 0
+  - m_Path: Base_Female/IK/Base.IK/Hips/Right_UpperLeg/Right_LowerLeg/Right_Foot/Right_Toes
+    m_Weight: 0
+  - m_Path: Base_Female/IK/Base.IK/Hips/Right_UpperLeg/Right_LowerLeg/Right_Foot/Right_Toes/Right_ToesEnd
+    m_Weight: 0
+  - m_Path: Base_Female/IK/Base.IK/Hips/Right_UpperLeg/Right_LowerLeg/Right_Foot/Right_Toes/Right_ToesEnd/Right_ToesEnd_end
+    m_Weight: 0
+  - m_Path: Base_Female/IK/Base.IK/Hips/Spine
+    m_Weight: 0
+  - m_Path: Base_Female/IK/Base.IK/Hips/Spine/UpperChest
+    m_Weight: 0
+  - m_Path: Base_Female/IK/Base.IK/Hips/Spine/UpperChest/Left_Shoulder
+    m_Weight: 1
+  - m_Path: Base_Female/IK/Base.IK/Hips/Spine/UpperChest/Left_Shoulder/Left_UpperArm
+    m_Weight: 1
+  - m_Path: Base_Female/IK/Base.IK/Hips/Spine/UpperChest/Left_Shoulder/Left_UpperArm/Left_LowerArm
+    m_Weight: 1
+  - m_Path: Base_Female/IK/Base.IK/Hips/Spine/UpperChest/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand
+    m_Weight: 1
+  - m_Path: Base_Female/IK/Base.IK/Hips/Spine/UpperChest/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_Hand_finger
+    m_Weight: 1
+  - m_Path: Base_Female/IK/Base.IK/Hips/Spine/UpperChest/Left_Shoulder/Left_UpperArm/Left_LowerArm/Left_Hand/Left_Hand_finger/Left_Hand_finger_end
+    m_Weight: 1
+  - m_Path: Base_Female/IK/Base.IK/Hips/Spine/UpperChest/Neck_Twist_A
+    m_Weight: 0
+  - m_Path: Base_Female/IK/Base.IK/Hips/Spine/UpperChest/Neck_Twist_A/Head
+    m_Weight: 0
+  - m_Path: Base_Female/IK/Base.IK/Hips/Spine/UpperChest/Neck_Twist_A/Head/hair1
+    m_Weight: 0
+  - m_Path: Base_Female/IK/Base.IK/Hips/Spine/UpperChest/Neck_Twist_A/Head/hair1/hair2
+    m_Weight: 0
+  - m_Path: Base_Female/IK/Base.IK/Hips/Spine/UpperChest/Neck_Twist_A/Head/hair1/hair2/hair3
+    m_Weight: 0
+  - m_Path: Base_Female/IK/Base.IK/Hips/Spine/UpperChest/Neck_Twist_A/Head/hair1/hair2/hair3/hair3_end
+    m_Weight: 0
+  - m_Path: Base_Female/IK/Base.IK/Hips/Spine/UpperChest/Neck_Twist_A/Head/Head.006
+    m_Weight: 0
+  - m_Path: Base_Female/IK/Base.IK/Hips/Spine/UpperChest/Neck_Twist_A/Head/Head.006/Head.007
+    m_Weight: 0
+  - m_Path: Base_Female/IK/Base.IK/Hips/Spine/UpperChest/Neck_Twist_A/Head/Head.006/Head.007/Head.007_end
+    m_Weight: 0
+  - m_Path: Base_Female/IK/Base.IK/Hips/Spine/UpperChest/Neck_Twist_A/Head/Jaw
+    m_Weight: 0
+  - m_Path: Base_Female/IK/Base.IK/Hips/Spine/UpperChest/Neck_Twist_A/Head/Jaw/Jaw_end
+    m_Weight: 0
+  - m_Path: Base_Female/IK/Base.IK/Hips/Spine/UpperChest/Right_Shoulder
+    m_Weight: 0
+  - m_Path: Base_Female/IK/Base.IK/Hips/Spine/UpperChest/Right_Shoulder/Right_UpperArm
+    m_Weight: 0
+  - m_Path: Base_Female/IK/Base.IK/Hips/Spine/UpperChest/Right_Shoulder/Right_UpperArm/Right_LowerArm
+    m_Weight: 0
+  - m_Path: Base_Female/IK/Base.IK/Hips/Spine/UpperChest/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand
+    m_Weight: 0
+  - m_Path: Base_Female/IK/Base.IK/Hips/Spine/UpperChest/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_Hand_finger
+    m_Weight: 0
+  - m_Path: Base_Female/IK/Base.IK/Hips/Spine/UpperChest/Right_Shoulder/Right_UpperArm/Right_LowerArm/Right_Hand/Right_Hand_finger/Right_Hand_finger_end
+    m_Weight: 0
+  - m_Path: Base_Female/IK/Base.IK/Knee.IK.L
+    m_Weight: 0
+  - m_Path: Base_Female/IK/Base.IK/Knee.IK.L/Knee.IK.L_end
+    m_Weight: 0
+  - m_Path: Base_Female/IK/Base.IK/Knee.IK.R
+    m_Weight: 0
+  - m_Path: Base_Female/IK/Base.IK/Knee.IK.R/Knee.IK.R_end
+    m_Weight: 0
+  - m_Path: Base_Female/IK/Base.IK/Leg.IK.L
+    m_Weight: 0
+  - m_Path: Base_Female/IK/Base.IK/Leg.IK.L/Leg.IK.L_end
+    m_Weight: 0
+  - m_Path: Base_Female/IK/Base.IK/Leg.IK.R
+    m_Weight: 0
+  - m_Path: Base_Female/IK/Base.IK/Leg.IK.R/Leg.IK.R_end
+    m_Weight: 0
+  - m_Path: Base_Female/IK/weapon
+    m_Weight: 1
+  - m_Path: Base_Female/IK/weapon/weapon_end
+    m_Weight: 1
+  - m_Path: dark_cid_body
+    m_Weight: 0
+  - m_Path: dark_cid_weapon
+    m_Weight: 0
+  - m_Path: ivan_Cube.003
+    m_Weight: 0
+  - m_Path: ivan_Cube.009
+    m_Weight: 0
